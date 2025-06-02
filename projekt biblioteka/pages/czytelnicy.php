@@ -74,4 +74,4 @@ echo "Nie ma";
 
 </table>
 </body>
-</html>
+</html> 

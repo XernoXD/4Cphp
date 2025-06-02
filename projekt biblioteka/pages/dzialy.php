@@ -41,7 +41,7 @@ while($row = mysqli_fetch_assoc($result)) {
 <tr>
 <td><?= $row["Nazwa"]?></td>
     <td><?= $row["Id_dzial"]?></td>
-    <td><a class="edit" href="?pages=edycjawiersza">X</td>
+    <td><a class="edit" href="?pages=edycjawiersza&id_dzial=<?= $row["Id_dzial"]?>">X</td>
 </tr>
 <?php
 }
