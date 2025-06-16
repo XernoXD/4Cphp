@@ -9,7 +9,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 $id_dzial = '0';
-if ($_SERVER['REQUEST_METHOD'] == 'POST') 
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $Nazwa = $_POST['Nazwa'] ? htmlspecialchars(trim($_POST['Nazwa'])) : '';
     if (isset($_POST['Id_dzial'])) {
         $id_dzial = $_POST['Id_dzial'];
@@ -26,6 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
 if ($id_dzial== 0) {
     $id_dzial= $_GET['Id_dzial'];
+}
 }
 $query2 = "SELECT * FROM `dzialy` WHERE Id_dzial= $id_dzial";
 $relust2 = mysqli_query($conn, $query2);

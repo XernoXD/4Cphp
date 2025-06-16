@@ -48,7 +48,7 @@ while($row = mysqli_fetch_assoc($result)) {
 <tr>
     <td><?= $row["Id_stanowisko"]?></td>
     <td><?= $row["Nazwa"]?></td>
-    <td><a class="delete" href="?pages=usuwanie">-</td><td><a class="edit" href="?pages=edycjastanowisk">O</td>
+    <td><a class="delete" href="?pages=usuwanie">&#10007;</td><td><a class="edit" href="?pages=edycjastanowisk&Id_stanowisko=<?=$row["Id_stanowisko"]?> "><img src="https://static-00.iconduck.com/assets.00/pen-emoji-1024x1024-pe6b2ljn.png" height= "15" width= "15"></td>
    
     
 
