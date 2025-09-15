@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+td {
+padding: 30px;
+width: 100px;
+text-align: center;
+}
+table {
+    border-collapse: collapse;
+    
+}
+
+    </style>
+    <h1 id="example">Zmień kolor tekstu</h1>
+    <table>
+    <tr>
+        <td onmouseover= "document.getElementById('example').style.color = 'gold'"
+        onmouseout= "document.getElementById('example').style.color = 'black'"
+        style="background-color: gold;">Gold</td>
+        <td onmouseover= "document.getElementById('example').style.color = 'khaki'"
+        onmouseout= "document.getElementById('example').style.color = 'black'" style="background-color: khaki;">Khaki</td>
+        <td onmouseover= "document.getElementById('example').style.color = 'silver'"
+        onmouseout= "document.getElementById('example').style.color = 'black'" style="background-color: silver;">Silver</td>
+        <td onmouseover= "document.getElementById('example').style.color = 'peru'"
+        onmouseout= "document.getElementById('example').style.color = 'black'" style="background-color: peru;">Peru</td>
+    </tr>
+    </table>
+</body>
+</html>
