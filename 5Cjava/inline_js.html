@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <textarea onfocus="this.style.backgroundColor = 'yellow'"></textarea>
+</div>
+    <p><input onblur="this.value = this.value.toUpperCase()"> </p>
+    <p>
+  <select onchange="this.style.color=this.value">
+    <option>black</option>
+    <option>brown</option>
+    <option>blue</option>
+    <option>blueviolet</option>
+    <option>burlywood</option>
+    <option>bisque</option>
+  </select>
+</p>
+
+<p 
+  onclick="this.style.fontSize='xx-large'" 
+  ondblclick="this.style.fontSize='medium'">
+  Hulka pepsi
+</p>
+<div>
+    <img src="obrazek.jpg" 
+    oncontextmenu="alert(this.src);">
+</div>
+<div>
+  <input type="text" onkeyup ="document.getElementById('wynik').innerText=this.value">
+  <p id ="wynik"></p>
+</div>
+<h1 style="color:green;" onmouseover="this.style.textShadow='2px 2px 5px green';"
+        onmouseout="this.style.textShadow='none';">
+        Hulka pepsi
+    </h1>
+
+</body>
+</html>
