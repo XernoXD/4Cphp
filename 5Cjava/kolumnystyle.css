@@ -1,0 +1,21 @@
+header {
+    background-color: #FFDFD3;
+    padding: 20px;
+}
+.side_column {
+    background-color: #D291BC;
+    padding: 20px;
+    width: 25%;
+}
+.main_column {
+    background-color: #FEC8D8;
+    padding: 20px;
+    width: 50%;
+}
+footer {
+    background-color: #957DAD;
+    padding: 20px;
+}
+.row {
+    display: flex;
+}
