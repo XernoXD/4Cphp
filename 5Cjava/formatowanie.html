@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatowanie</title>
+      <style>
+        .controls {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="example">Zmień formatowanie tego tekstu</h1>
+    <div class="controls">
+         <span>Krój czcionki</span>
+    <select id="fontSelect">
+        <option value="Arial">Arial</option>
+        <option value="Courier">Courier</option>
+        <option value="Helvetica">Helvetica</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Open Sans">Open sans</option>
+         <option value="Times New Roman">Times New Roman</option>
+         </select>
+         <label>
+        <input type="checkbox" id="boldCheck"> Pogrubienie
+    </label>
+    <label>
+        <input type="checkbox" id="underlineCheck"> Podkreślenie
+    </label>
+    <label>
+        <input type="checkbox" id="strikeCheck"> Przekreślenie
+    </label>
+    <label>
+        <input type="checkbox" id="italicCheck"> Kursywa
+    </label>
+</body>
+<script src="formatowanie.js"></script>      
+</html>
