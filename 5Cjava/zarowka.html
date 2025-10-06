@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>zarowka</title>
+	<style>
+				div{
+  background-color: white; 
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  height: 30px; 
+				}
+		img{
+			display: block;
+			width: 300px;
+			margin: auto;
+			padding: 20px;
+		}
+		body{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<fieldset style="margin-left: 30px; margin-right:30px; margin-top: 50px; border: 2px pink solid;padding: 0px;" >
+	<img src="off.png" alt="zar" id="zarowka" class="wyl" height="300px" width="300px">
+<br>
+	<div style="background-color: pink;">
+		
+	<input id="button1" type="button" value="włącz" >
+		<label style="margin-right: 300px;" for="button1"></label>
+	<input style=" margin-left: 700px;" type="button" id="button2" value="wyłącz">
+		<label for="button2"></label>
+	 </div>
+
+<br>
+	 <div style="vertical-align: middle;">
+	<input  name="1" type="radio" id="radio1" >
+		<label style="margin-right: 300px"; for="radio1"> włączona</label>
+	<input style="margin-left: 675px"; name="1" type="radio" id="radio2" checked >
+		<label for="radio2"> wyłączona</label>
+	</div>
+
+	<div style="background-color: pink;margin-bottom: 0px;">
+		<input type="checkbox" id="check"value="chckbox">
+			<label id="tekst" for="check">Włączona</label>
+	</div>
+
+</fieldset>
+	<script src="zarowka.js"></script>
+</body>
+</html>
