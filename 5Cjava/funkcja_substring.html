@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBSTRING</title>
+</head>
+<body> 
+    <fieldset>
+        
+        <legend>Funkcja slice()</legend>
+
+
+
+    <p id="par">Fryderyk Franciszek Chopin - polski kompozytor i pianista</p>
+    <p id="wynik"></p>
+    <p id="wynik2"></p>
+    <button onclick="wytnij1() " id="btn1">Wytnij znaki od 9 do 19</button> <br>
+    <button onclick="wytnij2()" id="btn2">Wytnij znaki od końca: od 27 do końca</button>
+
+
+
+    <script>
+        function wytnij1(){
+            const tekst = document.getElementById('par').textContent;
+             const wynik = document.getElementById('wynik');
+             const slice1 = tekst.substring(9, 19);
+             const btn1 = document.getElementById('btn1');
+            
+            
+            
+             wynik.textContent = slice1;
+             wynik.style.padding="8px";
+             wynik.style.border="4px dotted crimson";
+            
+             
+        
+        }
+        function wytnij2(){
+             const tekst = document.getElementById('par').textContent;
+             const wynik2 = document.getElementById('wynik2');
+             const slice2 = tekst.substring(27);
+             const btn1 = document.getElementById('btn2');
+             wynik2.textContent = slice2;
+             wynik2.style.border="3px double crimson ";
+             wynik2.style.padding="8px";
+            
+             
+             
+
+        }
+    </script>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prostokat</title>
+</head>
+<body>
+      <label for="szerokosc">Szerokość:</label>
+    <input type="number" id="szerokosc" value="0" min="0" max="20"></input>
+
+
+        <label for="wysokosc">Wysokosc:</label>
+    <input type="number" id="wysokosc" value="0" min="0" max="20"></input>
+
+
+    <label for="kolor">Kolor:</label>
+    <input type="color" id="kolor" value="#ffffff"></input></form>
+
+
+    <button onclick="narysuj()">Narysuj</button>
+    <div id="plotno"></div>
+    <script src="prostokat.js"></script>
+
+    
+    <p><span id="pole"></span> cm^2
+     <span id="obwod"></span> cm</p>
+</body>
+</html>
