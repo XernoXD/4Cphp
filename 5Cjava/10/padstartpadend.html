@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padstartpadend</title>
+</head>
+<body>
+    
+    
+    <p id="text">Stefan Banach</p>
+    
+    <button id="btn1" onclick="podkreslenia()">Podkreslenia</button>
+   
+    <button id="btn1" onclick="kropki()">Kropki</button>
+
+
+    <script>
+        function podkreslenia()
+        {
+            const p = document.getElementById('text');
+            p.textContent = p.textContent.padStart(20, "_");
+        
+        
+        }
+          function kropki(){
+            const p = document.getElementById('text');
+            p.textContent = p.textContent.padEnd(30, ".");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBSTR</title>
+</head>
+<body>
+    <fieldset> <legend>Funkcja substr()</legend>
+
+        <p id="par1">Mieszko I - władca Polski z dynastii Piastów</p>
+        <p id="par2"></p>
+        <p id="par3"></p>
+
+        <button onclick="substr1()">Wytnij znaki od 27 do 36</button><br>
+        <button onclick="substr2()">Wytnij znaki od 37 do końca</button>
+        <script>
+            function substr1() {
+                const tekst = document.getElementById('par1').textContent;
+                const wycinek = tekst.substr(27, 9);
+                const par2 = document.getElementById('par2');
+                par2.textContent = wycinek;
+                par2.style.color = "yellow";
+                par2.style.backgroundColor = "dodgerblue";
+                par2.style.padding = "5px";
+                par2.style.display="inline-block";
+            }
+
+            function substr2() {
+                const tekst = document.getElementById('par1').textContent;
+                const wycinek = tekst.substr(37);
+                const par3 = document.getElementById('par3');
+                par3.textContent = wycinek;
+                par3.style.color = "yellow";
+                par3.style.backgroundColor = "tomato";
+                par3.style.padding = "5px";
+                par3.style.display="inline-block";
+            }
+        </script>
+    </fieldset>
+</body>
+</html>
