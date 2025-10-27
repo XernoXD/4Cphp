@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEEP PURPLE</title>
+</head>
+<body>
+    <p id="text">Deep Purple - brytyjski zespół rockowy, członkowie:
+        
+        <span id="Ritchie Blackmore"></span>
+        
+        <span id="Jon Lord"></span>
+       
+        <span id="Nick Simper"></span>
+        
+        <span id="Ian Paice"></span>
+       
+        <span id="Rod Evans"></span>
+    
+    </p>
+    
+    
+    
+    <button id="btn1" onclick="dodaj('Ritchie Blackmore')">Ritchie Blackmore</button>
+    <button id="btn2" onclick="dodaj('Jon Lord')">Jon Lord</button>
+    <button id="btn3" onclick="dodaj('Nick Simper')">Nick Simper</button>
+    <button id="btn4" onclick="dodaj('Ian Paice')">Ian Paice</button>
+    <button id="btn5" onclick="dodaj('Rod Evans')">Rod Evans</button>
+    
+    
+    <script>
+       
+       
+       
+       function dodaj(name){
+            const p = document.getElementById(name);
+
+            p.textContent = p.textContent.concat(name, ', ');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPLIT</title>
+</head>
+<body>
+
+    <p id="text">0|1|2|3|5|7</p>
+    <button id="btn1" onclick="split1()">Utworz tablice liczb</button>
+
+
+
+
+    <script>
+        function split1(){
+
+
+            const p = document.getElementById('text');
+            console.log(p.textContent = p.textContent.split('|'));
+        }
+    </script>
+
+
+
+
+    <p id="text2">Jak nazywamy rozgrywanie w calosci albo we fragmentach danej gry komputerowej z zamiarem jak najszybszego ukonczenia? Speedrun.</p>
+    <button id="btn2" onclick="split2()">Utworz tablice wyrazow</button>
+
+
+
+    <script>
+        function split2(){
+
+
+
+            const p2 = document.getElementById('text2');
+            console.log(p2.textContent = p2.textContent.split(' ', 17));
+        }
+
+        
+    </script>
+    
+</body>
+</html>

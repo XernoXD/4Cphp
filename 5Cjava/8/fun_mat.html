@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUN</title>
+    <style>
+         h1 {
+      text-shadow: 2px 2px lightgray;
+    }
+    p, button {
+        background-color: lightsteelblue;
+        border-top: 2px solid rgb(1, 1, 39);
+        border-bottom: 2px solid rgb(2, 2, 68);
+         border-left: none;
+        border-right: none;
+        padding: 10px;
+    }
+    </style>
+</head>
+<body>
+ <button onclick="pokazWyniki()">Podaj liczbe</button>
+
+  <h1>Wprowadzone: (<span id="liczba"></span>)</h1>
+  <p>abs(<span id="liczba"></span>): <span id="abs"></span></p>
+  <p>ceil(<span id="liczba"></span>): <span id="ceil"></span></p>
+  <p>min(<span id="liczba"></span>): <span id="min"></span></p>
+  <p>max(<span id="liczba"></span>): <span id="max"></span></p>
+  <p>floor(<span id="liczba"></span>): <span id="floor"></span></p>
+  <p>pow(<span id="liczba"></span>, 2): <span id="pow"></span></p>
+  <p>round(<span id="liczba"></span>): <span id="round"></span></p>
+  <p>sqrt(<span id="liczba"></span>): <span id="sqrt"></span></p>
+    <button onclick="odswiez()">Odśwież stronę</button>
+  <script src="fun_mat.js"></script>
+</body>
+</html>

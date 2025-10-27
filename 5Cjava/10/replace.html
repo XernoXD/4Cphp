@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>replace</title>
+</head>
+<body>
+
+
+
+    <p id="text">Microsoft Edge - przeglądarka internetowa firmy Microsoft</p>
+
+    <button id="btn1" onclick="replaceedge()">Zastąp "Edge"</button><br>
+
+    <button id="btn2" onclick="replacemicrosoft()">Zastąp "Microsoft"</button>
+
+    <script>
+
+
+        function replaceedge(){
+
+            const p = document.getElementById('text');
+            p.textContent = p.textContent.replace('Edge', 'Janusz Explorer');
+        }
+
+        
+         function replacemicrosoft(){
+            const p = document.getElementById('text');
+            p.textContent = p.textContent.replace(/Microsoft/g, 'JanuszPol');}
+
+    </script>
+</body>
+</html>

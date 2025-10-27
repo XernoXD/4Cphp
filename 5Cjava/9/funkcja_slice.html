@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLICE</title>
+</head>
+<body> <fieldset><legend>Funkcja slice()</legend>
+    <p id="par">Mikołaj Kopernik - polski polihistor pochodzenia niemieckiego</p>
+    <p id="par1"></p>
+    <p id="par2"></p>
+    <button onclick="slice1()">Wytnij znaki od 26 do 36</button><br>
+    <button onclick="slice2()">Wytnij znaki od końca: od 5 do 12</button>
+
+
+
+    <script>
+        function slice1(){
+            const tekst = document.getElementById('par').textContent;
+             const wynik = document.getElementById('par1');
+             const wycinek = tekst.slice(26, 36);
+             wynik.textContent = wycinek;
+             wynik.style.fontSize="30px";
+             wynik.style.textShadow="3px 3px 5px red";
+             wynik.style.fontWeight="bold";
+          
+             
+
+        
+        }
+        function slice2(){
+             const tekst = document.getElementById('par').textContent;
+             const wynik2 = document.getElementById('par2');
+             const wycinek2 = tekst.slice(-12, -5);
+             wynik2.textContent = wycinek2;
+             wynik2.style.fontSize="30px";
+             wynik2.style.textShadow="2px 2px blue";
+             wynik2.style.fontStyle="cursive";
+             
+
+
+             
+        }
+    </script>
+    </fieldset>
+</body>
+</html>

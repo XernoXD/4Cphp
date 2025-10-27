@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPPERLOWER</title>
+</head>
+<body>
+
+
+
+    <p id="text">Euklides z Aleksandrii (stgr. Εὐκλείδης, Eukleides, ur. ok. 365 p.n.e., zm. ok. 270 p.n.e.) – grecki matematyk i fizyk, przez większość życia działający w Aleksandrii</p>
+    <button id="btn1" onclick="duze()">duze</button><br>
+
+
+    <button id="btn2" onclick="male()">male</button><br>
+
+
+    <button id="btn3" onclick="przywroc()">przywroc</button>
+
+    <script>
+        const originalText = 'Euklides z Aleksandrii (stgr. Εὐκλείδης, Eukleides, ur. ok. 365 p.n.e., zm. ok. 270 p.n.e.) – grecki matematyk i fizyk, przez większość życia działający w Aleksandrii';
+
+        function duze(){
+
+
+            const p = document.getElementById('text');
+            p.textContent = p.textContent.toUpperCase();}
+
+        function male(){
+
+
+            const p = document.getElementById('text');
+            p.textContent = p.textContent.toLowerCase();}
+            
+        function przywroc(){
+
+
+            
+            const p = document.getElementById('text');
+            p.textContent = originalText;}
+        
+    </script>
+</body>
+</html>
