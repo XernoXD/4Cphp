@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>
+            Elementu del używamy do tworzenia tekstu przekreślonego —
+            <del>Przykład: tekst przekreślony</del>
+        </p>
+        <p>
+            Elementu code używamy do tworzenia tekstu o stałej szerokości czcionki —
+            <code>console.log('przyklad')</code>
+        </p>
+        <p>
+            Elementu strong używamy do tworzenia tekstu pogrubionego —
+            <strong>Przykład: tekst ważny</strong>
+        </p>
+        <p>
+            Elementu em używamy do tworzenia tekstu z emfază (kursywa) —
+            <em>Przykład: tekst z emfază</em>
+        </p>
+    </div>
+
+    <div>
+       
+  <button id="btn">Znajdź i zmień</button>
+
+  <script>
+    document.getElementById('btn').addEventListener('click', () => {
+      const div = document.getElementById('container');
+      const elements = div.querySelectorAll('*');
+      console.log('Znalezione elementy:', elements);
+
+      for (const el of elements) {
+        console.log('Tag elementu:', el.tagName);
+        if (el.tagName === 'STRONG') {
+          el.style.border = '10px dotted green';
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
