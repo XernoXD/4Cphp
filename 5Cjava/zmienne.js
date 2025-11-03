@@ -6,4 +6,3 @@ console.log(e_98);
 const minimumVolume = 1;
 const maximumVolume = 100;
 console.table([minimumVolume, maximumVolume]);
-// minimumVolume = 0; // błąd
