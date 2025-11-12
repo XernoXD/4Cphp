@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function dragstartHandler(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function dragoverHandler(ev) {
+  ev.preventDefault();
+}
+
+function dropHandler(ev) {
+  ev.preventDefault();
+  const data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+<style>
+    #div1, #div2, #div3, #div4 {
+        float: left;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+        border: 3px solid red;
+        border-top-style: none;
+    }
+</style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <div id="div1" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)">
+                    <img id="img1" src="apple1.png" draggable="true" ondragstart="dragstartHandler(event)" width="88" height="88">
+            </td>
+            <td>
+                <div id="div2" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)">
+                    <img id="img2" src="apple2.png" draggable="true" ondragstart="dragstartHandler(event)" width="88" height="88">
+            </td>
+            <td>
+                <div id="div3" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)">
+                    <img id="img3" src="apple3.png" draggable="true" ondragstart="dragstartHandler(event)" width="88" height="88">
+            </td>
+            <td>
+                <div id="div4" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)">
+                    <img id="img4" src="apple4.png" draggable="true" ondragstart="dragstartHandler(event)" width="88" height="88">
+            </td>
+        </tr>
+        <tr>
+            <td><div id="div1" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div></td>
+            <td><div id="div2" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div></td>
+            <td><div id="div3" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div></td>
+            <td><div id="div4" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div></td>
+        </tr>
+
+    </table>
+</body>
+</html>
