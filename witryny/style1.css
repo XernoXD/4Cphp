@@ -1,0 +1,45 @@
+body {
+    font-family: serif;
+}
+h1, footer {
+    background-color: indigo;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+div {
+    background-color: blueviolet;
+    padding: 10px;
+    text-align: right;
+}
+
+#one, #three {
+    background-color: lavender;
+    height: 500px;
+
+}
+#two {
+    background-color: ghostwhite;
+    text-align: center;
+    height: 500px;
+    width: 40%;
+}
+#three {
+    float: right;
+    width: 50%;
+    padding: 10px;
+}
+#paragraph {
+    color: white;
+    text-decoration: italic;
+    font-size: 150%;
+}
+table, form {
+    margin: 30px;
+}
+table, td {
+    border: solid 1px indigo;
+}
+th, td {
+    padding: 3px;
+}
