@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Ciąg arytmetyczny</title>
+    <style>
+        body {
+            font-family: Arial;
+            max-width: 500px;
+            margin: 30px auto;
+            font-size: 18px;
+        }
+        fieldset {
+            padding: 20px;
+            border: 2px solid #444;
+            border-radius: 8px;
+        }
+        legend {
+            font-weight: bold;
+            padding: 0 8px;
+        }
+        input {
+            padding: 6px;
+            font-size: 16px;
+            margin: 5px 0;
+            width: 100%;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .wynik {
+            margin-top: 20px;
+            padding: 15px;
+            border-left: 4px solid #007bff;
+            background: #eef5ff;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Ciąg arytmetyczny</h2>
+
+<fieldset>
+    <legend>Dane wejściowe</legend>
+
+    <label>Podaj n:</label>
+    <input type="number" id="n" min="1" />
+
+    <button onclick="oblicz()">Oblicz</button>
+</fieldset>
+
+<div class="wynik" id="wynik"></div>
+
+<script>
+function oblicz() {
+    const a1 = 7;
+    const a2 = 10;
+    const n = Number(document.getElementById("n").value);
+
+    if (n < 1) {
+        document.getElementById("wynik").innerHTML = "Podaj poprawne n (n ≥ 1)";
+        return;
+    }
+
+    const d = a2 - a1;
+
+    // 3 pierwsze wyrazy
+    const pierwsze = [];
+    for (let i = 0; i < 3; i++) {
+        pierwsze.push(a1 + i * d);
+    }
+
+    // 3 ostatnie wyrazy
+    const ostatnie = [];
+    for (let i = n - 3; i < n; i++) {
+        if (i >= 0) ostatnie.push(a1 + i * d);
+    }
+
+    const an = a1 + (n - 1) * d;
+    const Sn = ((a1 + an) * n) / 2;
+
+    document.getElementById("wynik").innerHTML =
+        "<b>3 pierwsze wyrazy:</b> " + pierwsze.join(", ") + "<br>" +
+        "<b>3 ostatnie wyrazy:</b> " + ostatnie.join(", ") + "<br>" +
+        "<b>Suma Sₙ:</b> " + Sn;
+}
+</script>
+
+</body>
+</html>
