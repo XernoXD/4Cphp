@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miara Kąta</title>
+</head>
+<style>
+     div {
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    #godziny, #minuty, #kąt {
+        width: 150px;
+        display: inline-block;
+        
+    }
+    #godzina, #minuta, #miarakata {
+        border-bottom: 4px solid rgb(17, 16, 16);
+         display: inline-block;
+         text-align: right;
+         width: 100%;
+         color: red;
+      
+         
+    }
+    
+</style>
+<body>
+    <h3>Miara kąta między wskazówkami zegara</h3>
+    <div><p>Miarę konta miedzy wskazówką minutową a godzinową można obliczyć według wzoru:
+       </p> <img src="zdjecie.png" alt="miara kata"></div> <br>
+      <div id="godziny">
+        <label>Godziny h ∈ [0, 11]</label><br>
+        <input type="range" id="hours" min="0" max="11" value="0">
+        <br>
+        <span id="godzina">0</span>
+    </div>
+      <div id="minuty">
+        <label>Minuty m ∈ [0, 60]</label><br>
+        <input type="range" id="minutes" min="0" max="60" value="0">
+        <br><span id="minuta">0</span>
+    </div>
+<br> <br>
+<img src="apple1.png" alt="">
+<br> <br>
+    <div id="kąt">
+        <p>Kąt</p>
+        <span id="miarakata">0°</span>
+    </div>
+</body>
+<script src="zegar.js"></script>
+</html>
