@@ -1,0 +1,22 @@
+body {
+    background-color: lightyellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: lightcoral;
+}
+fieldset {
+    border-width: 2px;
+    border-color: coral;
+}
+input, label {
+    background-color: lightgoldenrodyellow;
+    color: brown;
+
+}
+
+input {
+    width: 100px;
+}
+button {
+    cursor: pointer;
+}
