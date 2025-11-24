@@ -1,45 +1,69 @@
 body {
-    font-family: serif;
+    font-family: 'Bookman', serif;
 }
-h1, footer {
-    background-color: indigo;
+
+header,
+footer {
+    background-color: Indigo;
     color: white;
-    text-align: center;
     padding: 10px;
+    text-align: center;
 }
-div {
-    background-color: blueviolet;
+
+#napis {
+    background-color: BlueViolet;
     padding: 10px;
     text-align: right;
 }
 
-#one, #three {
+#lewy,
+#prawy {
     background-color: lavender;
     height: 500px;
-
+    float: left;
 }
-#two {
-    background-color: ghostwhite;
+
+#lewy {
+    width: 25%;
+}
+
+#prawy {
+    width: 35%;
+}
+
+main {
+    background-color: GhostWhite;
     text-align: center;
     height: 500px;
     width: 40%;
+    float: left;
 }
-#three {
+
+img {
     float: right;
     width: 50%;
     padding: 10px;
 }
-#paragraph {
+
+p {
     color: white;
-    text-decoration: italic;
     font-size: 150%;
+    font-style: italic;
 }
-table, form {
+
+table,form {
     margin: 30px;
 }
-table, td {
-    border: solid 1px indigo;
+
+table,td {
+    border: 1px solid indigo;
+    border-collapse: collapse;
 }
-th, td {
+
+th,td {
     padding: 3px;
+}
+
+footer {
+    clear: both;
 }
